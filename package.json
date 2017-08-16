@@ -3,20 +3,27 @@
   "version": "1.0.0",
   "description": "Show off your hard work",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm-run-all --parallel security-check open:src",
-    "open:src": "node buildScripts/server.js",
-    "security-check": "nsp check"
-  },
   "author": "Nate Lipp",
   "license": "MIT",
   "dependencies": {
-    "whatwg-fetch": "1.0.0"
   },
-  "dependencies": {
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "babel-node buildScripts/server.js",
+    "security-check": "nsp check"
   },
   "devDependencies": {
+    "babel-cli": "6.16.0",
+    "babel-core": "6.17.0",
+    "babel-loader": "6.2.5",
+    "babel-preset-latest": "6.16.0",
+    "babel-register": "6.16.3",
     "express": "4.14.0",
     "npm-run-all": "3.1.1",
     "nsp": "2.6.2"
