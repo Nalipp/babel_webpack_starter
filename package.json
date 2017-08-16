@@ -5,6 +5,7 @@
   "author": "Nate Lipp",
   "license": "MIT",
   "dependencies": {
+    "mongodb": "^2.2.31"
   },
   "babel": {
     "presets": [
@@ -12,7 +13,7 @@
     ]
   },
   "scripts": {
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
     "start": "npm-run-all --parallel security-check open:src lint-watch",
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint-watch": "npm run lint -- --watch",
