@@ -66,3 +66,25 @@ create buildScripts/testSetup.js
 create src/index.test.js
 ```
 
+## commit 6
+connect to the database
+
+create user file structure
+
+```
+// files changed
+update server.js
+
+create config.js
+create mongoose.js
+create users file structure
+```
+
+## commit 6
+deploy to heroku
+
+```
+// files changed
+update server.js
+
+```

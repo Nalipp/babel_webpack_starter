@@ -20,6 +20,9 @@
     "open:src": "babel-node buildScripts/server.js",
     "security-check": "nsp check"
   },
+  "engines": {
+    "node": "6.9.3"
+  },
   "devDependencies": {
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
