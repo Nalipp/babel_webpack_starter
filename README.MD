@@ -41,12 +41,12 @@ create src/index.js
 create src/index.css
 create .eslintrc.json
 ```
-## commit 3
+## commit 4
 set up travis
 
 https://travis-ci.org/
 
-+ new repository
+\+ new repository
 
 select and turn on repo from the list
 
@@ -54,3 +54,15 @@ select and turn on repo from the list
 // files changed
 .travis.yml
 ```
+
+## commit 5
+set up test configuration
+
+```
+// files changed
+update package.json
+
+create buildScripts/testSetup.js
+create src/index.test.js
+```
+
