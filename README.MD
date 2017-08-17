@@ -1,6 +1,3 @@
-# tee_slip
-### Show off you study behavior and hard word
-
 ## commit 1
 initial commit
 ```
